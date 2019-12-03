@@ -10,7 +10,7 @@ public class Product {
 	private boolean selected;
 	private String picture;
 	
-	
+	private Category category;
 	
 	
 	
@@ -44,6 +44,12 @@ public class Product {
 	
 	
 	
+	public Category getCategory() {
+		return category;
+	}
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 	public int getId() {
 		return id;
 	}
@@ -85,6 +91,12 @@ public class Product {
 	}
 	public void setPicture(String picture) {
 		this.picture = picture;
+	}
+	
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", designation=" + designation + ", description=" + description + ", price="
+				+ price + ", quantity=" + quantity + ", selected=" + selected + ", picture=" + picture + "]";
 	}
 	
 	
