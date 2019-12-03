@@ -18,7 +18,7 @@ public class DBUtil {
 		
 		// 2. create connection
 		cx = DriverManager.getConnection(URI, USERNAME, PASSWORD);
-			
+		
 	}
 	
 	
